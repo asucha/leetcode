@@ -1,7 +1,7 @@
 
-#
+# leetcode nickname asucha_473109
 
-#
+# 2026-05-31 leetcode daily problem --- medium --- 2126. Destroying Asteroids --- solved
 
 """
 2126. Destroying Asteroids
