@@ -51,7 +51,7 @@ class Solution:
         rotated = 0 # Zero as False, One as True
         for elem in nums:
             if elem >= greatest:
-                subarrays[rotated].append(elem)   
+                subarrays[rotated].append(elem)
                 greatest = elem
             else:
                 if rotated:

@@ -45,17 +45,17 @@ from typing import List
 
 # Solution Attempt 1 - Accepted, passed all 75 test cases, beats 54% runtime-wise and 54% memory-wise
 
-# At first the task seems easy since the contraints does not permit 
+# At first the task seems easy since the contraints does not permit
 # the usage of sorting algorithms, but such approach can be inefficient,
 # since it will potentially need to put the entire set of 10^5 asteroids
 # and this seems inefficient since it will need to go through all of the
-# masses and compare them, but lets try at first  
+# masses and compare them, but lets try at first
 
 # Okay it did work afterall...
 
 # class Solution:
 #     def asteroidsDestroyed(self, mass: int, asteroids: List[int]) -> bool:
-        
+
 #         planetmass = mass
 #         order = sorted(asteroids)
 
@@ -68,18 +68,18 @@ from typing import List
 
 # Solution Attempt 2 - Accepted, now beats 74% runtime-wise and 75% memory-wise
 
-# Let's put some optimisation tweaks in place 
+# Let's put some optimisation tweaks in place
 
 class Solution:
     def asteroidsDestroyed(self, mass: int, asteroids: List[int]) -> bool:
-        
+
         asteroids.sort()
 
         for asteroid in asteroids:
             if mass < asteroid:
                 return False
             mass += asteroid
-                
+
         return True
 
 

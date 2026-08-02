@@ -50,9 +50,9 @@ from typing import List
 #   not the worst but not the best
 
 class Solution:
-    
+
     def longestCommonPrefix(self, arr1: List[int], arr2: List[int]) -> int:
-        
+
         def allPrefixVariants(number :int) -> List[int]:
             rest = number
             result = []
@@ -60,10 +60,10 @@ class Solution:
                 result.append(rest)
                 rest = rest // 10
             return result
-    
+
         prefixesArr1 = set()
         prefixesArr2 = set()
-        
+
         for elem in arr1:
             [prefixesArr1.add(variation) for variation in allPrefixVariants(elem)]
         for elem in arr2:
@@ -78,12 +78,12 @@ class Solution:
 
 # attempt 1 - does its job, but takes too long
 #   the complexity is O(n^3)
-#   the function needs to get rid off of the unnecessary 
+#   the function needs to get rid off of the unnecessary
 
 # class Solution:
-    
+
 #     def longestCommonPrefix(self, arr1: List[int], arr2: List[int]) -> int:
-        
+
 #         commonPrefixInGivenPair = []
 #         strArr1 = [ str(elemArr1) for elemArr1 in arr1 ]
 #         strArr2 = [ str(elemArr2) for elemArr2 in arr2 ]
@@ -96,5 +96,5 @@ class Solution:
 #                         commonPrefixInGivenPair[-1] += digitElemArr1
 #                     else:
 #                         break
-                    
+
 #         return max([len(elem) for elem in commonPrefixInGivenPair])
