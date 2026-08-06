@@ -1,7 +1,7 @@
 
 # leetcode nickname asucha_473109
 
-# 2026-08-02 leetcode daily problem --- easy --- 3345. Smallest Divisible Digit Product I --- solved
+# 2026-08-06 leetcode daily problem --- easy --- 3345. Smallest Divisible Digit Product I --- solved
 
 """
 You are given two integers n and t.
